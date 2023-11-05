@@ -1,0 +1,906 @@
+@font-face {
+  font-family: ageo;
+  src: local(ageo), url(../_font/ageo-regular.otf);
+}
+
+:root {
+	--nude: #f7d1ba;
+	--terra: #A7523D;
+	--rose: #d39a89;
+	--caramelo: #ce7e5d;
+}
+
+body {
+	font-family: ageo;
+}
+
+
+header {
+	background: var(--nude);
+	z-index: 20;
+}
+
+.cabecalho {
+	color: var(--terra);
+	width: 100%;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-top: .75rem;
+	padding-bottom: .75rem;
+	border-bottom: 1px solid var(--rose);
+	position: absolute;
+}
+
+.cabecalho__inicial {
+	color: var(--terra);
+	width: 100%;
+	box-sizing: border-box;
+	display: none;
+	flex-direction: column;
+	align-items: center;
+	padding-top: .75rem;
+	padding-bottom: .75rem;
+	border-bottom: 1px solid var(--rose);
+	position: absolute;
+}
+
+.cabecalho__logo {
+	margin-bottom: 1rem;
+}
+
+.cabecalho__navegacao {
+	text-align: center;
+}
+
+
+
+.cabecalho__link {
+	font-size: 1.1rem;
+	display: inline-block;
+	margin-right: .7rem;
+	margin-bottom: 1.25rem;	
+}
+
+nav a {
+	color: var(--terra);
+	text-decoration: none;
+	transition: 1s all;
+}
+
+nav a:hover {
+	color: var(--caramelo);
+	transition: 1s all;
+}
+
+.container {
+	padding-left: 6%;
+	padding-right: 6%;
+}
+
+.botao {
+	text-align: center;
+	display: block;
+	width: 100%;
+	max-width: 350px;
+	box-sizing: border-box;
+	padding: 1rem 2rem;
+	border: 1px solid var(--terra);
+	border-radius: 5px;
+	text-decoration: none;
+	color: var(--terra);
+	font-size: 1.25rem;
+	margin: 1.5rem 0;
+}
+
+.botao__solido {
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	max-width: 350px;
+	box-sizing: border-box;
+	padding: 1rem 2rem;
+	border: 1px solid var(--terra);
+	border-radius: 5px;
+	text-decoration: none;
+	color: var(--nude);
+	font-size: 1.40rem;
+	margin: 1.5rem 0;
+	background-color: var(--terra);
+	box-shadow: 1px 10px 10px 5px #00000050;
+}
+
+.botao__solido__menor {
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	box-sizing: border-box;
+	padding: 1rem 2rem;
+	border: 1px solid var(--terra);
+	border-radius: 5px;
+	text-decoration: none;
+	color: var(--terra);
+	font-size: 1rem;
+	margin: 1.5rem 0;
+	box-shadow: 1px 10px 10px 5px #f0f0f0;
+}
+
+.chamada {
+	display: flex;
+	flex-direction: column;
+	align-items: left;
+	text-align: left;
+	background-image: url(../img/nutricionista-em-balneario-camboriu-tamires-miranda-pereira-da-cruz-pq.png);
+	background-repeat: no-repeat;
+	background-color: #dcdddf;
+	height: 100vh;
+	padding-left: 6%;
+	padding-right: 6%;
+}
+
+.etapas {
+	display: flex;
+	flex-direction: column;
+	align-items: left;
+	text-align: left;
+	padding-top: 12.25rem;
+	padding-bottom: 2.5rem;
+}
+
+.cabecalho__navegacao-inicio {
+	padding-top: 1.5rem;
+	text-align: center;
+}
+
+.chamada__titulo {
+	padding-top: 6rem;
+	padding-right: 50%;
+	font-size: 2rem;
+	text-transform: uppercase;
+	color: var(--terra);
+	margin-bottom: 1.5rem;
+}
+
+.chamada__texto {
+	font-size: 1.25rem;
+	line-height: normal;
+	margin-bottom: 0 auto 2.5rem;
+	padding-right: 50%;
+}
+
+.chamada__botao {
+	width: 100%;
+	text-align: center;
+	margin-right: 50%;
+}
+
+.botao__solido-varia {
+	width: 100%;
+	text-align: center;
+	margin-right: 50%;
+	background-color: var(--terra);
+	color: var(--nude);
+}
+
+.sobre {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	height: 100vh;
+}
+
+.sobre__titulo {
+	font-size: 2rem;
+	text-transform: uppercase;
+	color: var(--terra);
+	margin-bottom: 1.5rem;
+}
+
+.sobre__texto {
+	font-size: 1.25rem;
+	line-height: normal;
+	margin-bottom: 0 auto 2.5rem;
+}
+
+.sobre__botao {
+	width: 100%;
+}
+
+.sobre__imagem {
+	display: none;
+}
+.sobre-sobre {
+	align-items: center;
+	text-align: center;
+	padding-top: 2.5rem;
+}
+
+.sobre__texto-sobre {
+	font-size: 1.25rem;
+	line-height: normal;
+	margin-bottom: 0 auto 2.5rem;
+	text-align: justify;
+	padding-top: 1rem;
+}
+
+.sobre__imagem-sobre {
+	display: none;
+	margin-right: 3rem;
+	box-shadow: 0 2px 10px 5px #00000070;
+}
+
+.sobre__imagem-sobre-direita {
+	display: none;
+	margin-left: 3rem;
+	box-shadow: 0 2px 10px 5px #00000070;
+}
+
+.servicos-lista {
+	font-size: 1.25rem;
+	line-height: normal;
+	margin-bottom: 0 auto 2.5rem;
+	text-align: left;
+	margin-top: 1rem;
+	padding-left: 1rem;
+}
+
+.missao__valores {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;	
+	padding-bottom: 2.5rem;
+	background: var(--terra);
+	height: 100vh;
+	justify-content: space-evenly;
+}
+
+.missao__valores__titulo {
+	font-size: 2rem;
+	text-transform: uppercase;
+	color: var(--nude);
+	margin-bottom: 1.5rem;
+	padding-top: 2.5rem;
+}
+
+.missao__valores__texto {
+	font-size: 1.25rem;
+	line-height: normal;
+	margin-bottom: 0 auto 2.5rem;
+	color: var(--nude);
+}
+
+.diferenciais {
+	display: flex;
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+	height: 100vh;
+	justify-content: space-evenly;
+}
+
+.diferenciais__lista {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.diferenciais__item {
+    max-width: 350px;
+    box-sizing: border-box;
+    padding: 2rem 0 2rem 5rem;
+    background-repeat: no-repeat;
+    background-position: top 1.25rem left 2.3rem;
+}
+
+.diferenciais__item--acompanhamento {
+	background-image: url(../img/acompanhamento.svg);
+}
+
+.diferenciais__item--foco {
+	background-image: url(../img/foco.svg);
+}
+
+.diferenciais__item--simplicidade {
+	background-image: url(../img/simplicidade.svg);
+}
+
+.item__titulo {
+    color: var(--terra);
+    font-weight: 700;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+}
+
+.item__texto {
+    line-height: normal;
+	font-size: 1.25rem;
+}
+
+.destaques{
+	display: flex;
+	flex-direction: column;
+	background: #f0f0f0;
+	padding-top: 2.5rem;
+	padding-bottom: 2rem;
+	text-align: center;
+}
+
+.destaque__lista {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.destaques__titulo {
+	color: var(--terra);
+	font-weight: 700;
+	font-size: 1.5rem;
+	text-transform: uppercase;
+	text-align: center;
+	margin-bottom: 2rem;
+}
+
+.destaques__titulo-etapa {
+	color: var(--terra);
+	font-weight: 700;
+	font-size: 1.5rem;
+	text-transform: uppercase;
+	text-align: left;
+	margin-bottom: 2rem;
+	padding-top: 2rem;
+	padding-left: 1rem;
+}
+
+.destaques__painel {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 2rem;
+}
+
+.destaques__painel-imagem {
+	width: 100vw;
+	box-shadow: 0 2px 10px 5px #00000020;
+	margin-bottom: .5rem;
+}
+
+.destaques__painel-texto {
+	font-weight: 700;
+	font-size: 1.2rem;
+	line-height: normal;
+	color: var(--terra);
+	text-align: center;
+}
+
+.video {
+	padding-top: 2.5rem;
+	width: 100vw;
+	height: 20rem;
+	margin-bottom: .5rem;
+}
+
+.destaques__botao {
+	text-align: center;
+}
+
+.institucional {
+	display: flex;
+	flex-direction: column-reverse;
+	align-items: center;
+	color: var(--terra);
+	text-align: center;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+.institucional-contato {
+	padding-top: 15.25rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	color: var(--terra);
+	text-align: center;
+	padding-bottom: 2rem;	
+}
+
+.institucional__titulo {
+	color: var(--terra);
+	font-weight: 700;
+	font-size: 1.5rem;
+	text-transform: uppercase;
+	text-align: center;
+	margin-bottom: 2rem;
+}
+
+.institucional__endereco {
+	font-size: 1.25rem;
+	line-height: normal;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.institucional__contato {
+	font-weight: 1.2rem;
+	line-height: 1.8;
+}
+
+.institucional__contato-telefone {
+	line-height: normal;
+	color: var(--terra);
+}
+
+.institucional__contato-email {
+	color: var(--terra);
+	text-decoration: underline;
+	display: block;
+}
+
+.mapa__inicio {
+	width: 90vw;
+	height: 50vh;
+	padding-left: 1%;
+	padding-right: 2%;
+}
+
+.mapa {
+	width: 100vw;
+	height: 300px;
+}
+
+.contato_whatsaap-nutricionista-tamires {
+	display: flex;
+	flex-direction: row-reverse;
+	align-items: center;
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+	z-index: 10;
+}
+.popup__whatsaap {	
+	display: none;
+	margin-right: 10px;
+	background-color: #00d000;
+	border-radius: 15px;
+	padding: 5px 10px;
+	font-size: 1.50rem;
+	color: #ffffff;
+}
+
+.mostra {	
+	display: block;
+}
+
+footer {
+	text-align: center;
+	background: var(--terra);
+	padding: 40px 0;
+	color: var(--nude);
+	z-index: 19;
+}
+
+.logo__footer {
+	width: 245px;
+}
+
+/*======================= BLOG ==================================*/
+
+.header__blog-nutricao-balneario-camboriu {
+	padding-top: 12rem;
+}
+
+.blog__container {
+	padding-top: 2rem;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+	padding-left: 6%;
+	padding-right: 6%;
+}
+
+.titulo__blog-nutricao-balneario-camboriu{
+	font-size: 2.50rem;
+	font-weight: 700;
+	color: var(--caramelo);
+	text-transform: uppercase;
+	text-align: center;
+	padding-bottom: 5px;
+}
+
+.slogan__blog-nutricao-balneario-camboriu {
+	color: var(--rose);
+	text-align: center;
+	font-size: 0.90rem;
+}
+
+.imagem__item {
+	height: auto;
+	width: auto;
+	flex-grow: 1;
+}
+
+.blog_imagem {
+	width: 100%;
+	height: auto;
+
+}
+
+.blog__categoria {
+	text-transform: uppercase;
+	color: var(--caramelo);
+	padding-bottom: 10px;
+	font-size: 0.95rem;
+}
+
+.blog__categoria-post {
+	text-transform: uppercase;
+	color: var(--caramelo);
+	padding-bottom: 10px;
+	font-size: 0.95rem;
+}
+
+.descricao__post span {
+	font-size: 0.85rem;
+	color: var(--rose);
+}
+
+.blog__post-geral span {
+	font-size: 0.85rem;
+	color: var(--rose);
+}
+
+.imagem__credito {
+	text-align: right;
+	font-size: 0.70rem;
+}
+
+.descricao__post {
+	gap: 10px;
+	padding-bottom: 10px;
+	font-size: 1.25rem;
+}
+
+.descricao__post h2 {
+	color: var(--terra);
+	font-weight: 700;
+	font-size: 1.50rem;
+	padding-bottom: 5px;
+}
+
+.descricao__post p {
+	padding-top: 10px;
+}
+
+.apresentacao__container {
+	display: none;
+}
+
+.blog_imagem-post {
+	padding-top: 10px;
+	width: 100%;
+	height: auto;
+}
+
+.blog__titulo {
+	color: var(--terra);
+	font-size: 1.50rem;
+	padding-bottom: 10px;
+}
+
+.blog__outros-posts {
+	display: flex;
+	flex-direction: column;
+	padding-top: 15px;
+	padding-left: 6%;
+	padding-right: 6%;
+}
+
+.sobre__titulo-blog {
+	font-size: 2rem;
+	text-transform: uppercase;
+	color: var(--terra);
+}
+
+.posts-sugeridos {
+	padding-top: 30px;
+}
+
+.posts-sugeridos h3 {
+	padding-left: 6%;
+	font-size: 1rem;
+	color: var(--terra);
+}
+
+
+
+@media screen and (min-width: 768px) {
+	.chamada__texto{
+		max-width: 600px;
+	}
+
+	.institucional__contato-email {
+		display: inline-block;
+	}
+
+	.destaques__painel-imagem {
+		width: 100%;
+	}
+
+	.video {
+		width: 100%;
+	}
+	.diferenciais {
+		height: auto;
+	}
+	.missao__valores {
+		height: auto;
+		padding-left: 20%;
+		padding-right: 20%;
+
+	}	
+
+	.blog_imagem {
+		width: 300px;
+	}
+
+	.descricao__post {
+		height: auto;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+
+	.cabecalho {
+		position: fixed;
+  		top: 0;
+	}
+	.cabecalho {
+		flex-direction: row;
+		justify-content: space-between;
+		border: none;
+		box-shadow: 0 2px 10px 5px #00000020;
+	}
+
+	.chamada {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		background-image: url(../img/nutricionista-em-balneario-camboriu-tamires-miranda-pereira-da-cruz.png);	
+		background-repeat: no-repeat;
+		background-color: #dcdddf;
+		height: 100vh;
+	}
+
+	.cabecalho__navegacao-inicio {
+		padding-top: 6rem;
+		padding-left: 50%;
+	}
+	
+	.chamada__titulo {
+		padding-top: 6rem;
+		padding-left: 50%;
+		padding-right: 0;
+		font-size: 2rem;
+		text-transform: uppercase;
+		color: var(--terra);
+		margin-bottom: 1.5rem;
+	}
+	
+	.chamada__texto {
+		font-size: 1.25rem;
+		line-height: normal;
+		margin-bottom: 0 auto 2.5rem;
+		padding-left: 50%;
+		padding-right: 0;
+	}
+	
+	.botao__solido-varia {
+		width: 100%;
+		text-align: center;
+		margin-left: 50%;
+		margin-right: 0;
+		background-color: rgba(255, 255, 128, .0);
+		color: var(--terra);
+	}
+	
+
+	.sobre {
+		display: flex;
+	}
+
+	.sobre-sobre {
+		display: flex;
+	}
+
+	.sobre__conteudo {
+		margin-right: 3rem;
+	}
+
+	.sobre__titulo {
+		padding-top: 7rem;
+		text-align: left;
+	}
+
+	.sobre__titulo-blog {
+		text-align: left;
+	}
+
+	.sobre__texto {
+		text-align: left;
+	}
+
+	.sobre__imagem {
+		display: block;
+		height: 100vh;
+	}
+
+	.sobre__imagem-sobre {
+		display: block;
+	}
+
+	.sobre__imagem-sobre-direita {
+		display: block;
+	}
+
+	.destaques{
+		display: flex;
+		flex-direction: column;
+		background: #f0f0f0;
+		padding-top: 2.5rem;
+		padding-bottom: 2rem;
+		padding-left: 0rem;
+	}
+
+	.destaques__itens {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+    	align-items: center;
+	}
+
+	.destaques__painel-imagem {
+		width: 360px;
+	}
+
+	.video {
+		padding-top: 0px;
+		width: 360px;
+		height: 360px;
+		box-shadow: 0 2px 10px 5px #00000020;
+	}
+
+	.endereco {
+		display: flex;
+		flex-direction: row;
+	}
+
+	.institucional {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+    	align-items: center;
+	}
+
+	.institucional-contato {
+		padding-top: 5.25rem;
+		display: flex;
+		flex-direction: row-reverse;
+		justify-content: space-evenly;
+    	align-items: center;
+	}
+	
+	.institucional__endereco {
+		font-size: 1.5rem;
+	}
+
+	.institucional__mapa{
+		width: 500px;
+		padding-top: 8.25rem;
+	}
+	.contato-caixa  {
+		padding-top: 17rem;
+	}
+
+	.mapa {
+		width: 500px; 
+		height: 350px;
+		box-shadow: 0 2px 10px 5px #00000020;
+	}
+
+	.mapa__inicio {
+		width: 500px;
+		height: 500px;
+		padding-left: 1%;
+		padding-right: 2%;
+	}
+
+	.contato_whatsaap-nutricionista-tamires {
+		bottom: 20px;
+		right: 20px;
+	}
+
+	.blog__container {
+		flex-direction: column;
+	}
+
+	.header__blog-nutricao-balneario-camboriu {
+		padding-right: 350px;
+	}
+
+	.titulo__blog-nutricao-balneario-camboriu {
+		text-align: center;
+	}
+
+	.slogan__blog-nutricao-balneario-camboriu {
+		font-size: 1rem;
+		text-align: center;
+	}
+
+	.apresentacao__container {
+		position: absolute;
+		right: 0;
+		top: 12rem;
+		width: 330px;
+		height: 100%;
+		padding-right: 6%;
+	}
+
+	.apresentacao__container{
+		display: flex;
+		flex-direction: column;
+		gap: 15px;
+		align-items: center;
+	}
+	
+	.apresentacao__titulo {
+		color: var(--terra);
+		font-weight: 700;
+		font-size: 1.25rem;
+	}
+	
+	.apresentacao__texto {
+		padding: 0% 6% 0% 6%;
+		font-size: 0.98rem;
+		color: #2f2f2f;
+	}
+	
+	.apresentacao__imagem {
+		width: 150px;
+		height: 150px;
+		border-radius: 50%;
+		padding-top: 0px;
+	}
+
+	.sobre__botao botao {
+		padding: 50px;
+	}
+
+	.imagem__item {
+		display: flex;
+		flex-direction: row;
+	}
+	.blog__area-do-post {
+		padding-left: 20px;
+		padding-right: 350px;
+	}
+
+	.blog__post-geral {
+		padding-right: 350px;
+	}
+	.blog_artigo {
+		display: flex;
+	}
+
+	.institucional__conteudo {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	
+}
